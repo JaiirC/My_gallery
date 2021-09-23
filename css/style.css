@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -79,3 +78,63 @@ header {
     text-align: center;
     color: #BDBDBD;
   }
+
+  /*estilo de la galeria*/
+.gallery {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+.gallery .grid {
+    margin: auto;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.gallery .grid img{
+    border-radius: 15px;
+}
+
+.grid .photo-one {
+    width: 299px;
+    height: 299px;
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+  
+  .grid .photo-two {
+    width: 629px;
+    height: 299px;
+    grid-column: 2 /span 3;
+    grid-row: 1;
+}
+  
+.grid .photo-three {
+    width: 634px;
+    height: 299px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+  
+.grid .photo-four {
+    width: 299px;
+    height: 299px;
+    grid-column: 1;
+    grid-row: 3;
+}
+  
+.grid .photo-five {
+    width: 299px;
+    height: 299px;
+    grid-column: 2;
+    grid-row: 3;
+}
+  
+.grid .photo-six {
+    width: 297px;
+    height: 634px;
+    grid-column: 3;
+    grid-row: 2 / span 3;
+  }
+  
