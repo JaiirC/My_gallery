@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
+/*header*/
 header {
     display: flex;
 }
@@ -16,14 +16,14 @@ header {
     display: flex;
     flex-direction: column;
   }
-  
+  /*formato del imagen*/
  .perfil img {
     width: 156px;
     border-radius: 10%;
     margin: auto;
     margin-bottom: 10px;
   }
-  
+  /* estilos textos*/
  .perfil p {
     text-align: center;
   }
@@ -85,7 +85,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-  
+/*implementacion del grid para las imagenes*/  
 .gallery .grid {
     margin: auto;
     display: grid;
@@ -95,7 +95,7 @@ header {
 .gallery .grid img{
     border-radius: 15px;
 }
-
+/*se dita una por una el tama;o de las celdas*/
 .grid .photo-one {
     width: 299px;
     height: 299px;
@@ -138,3 +138,77 @@ header {
     grid-row: 2 / span 3;
   }
   
+  /* responsive con grid  */
+  
+@media screen and (max-width: 990px)  {
+
+  header .perfil_header .profile img {
+    width: 101px;
+    border-radius: 16px;
+    margin-bottom: 11px;
+  }
+
+  header .perfil_header .perfil .name {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 5px;
+  }
+
+  header .perfil_header .perfil .location {
+  font-size: 10px;
+  line-height: 12px;
+  }
+
+  .card .info {
+    margin-top: 12px;
+    padding: 10px 15px;
+  }
+
+   .info .number {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .info .description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  main .gallery {
+    margin: 40px 0;
+  }
+
+  main .gallery .grid {
+    grid-gap: 11px;
+  }
+
+  .grid .photo-one {
+    width: 109px;
+    height: 109px;
+  }
+
+  .grid .photo-two {
+    width: 229px;
+    height: 109px;
+  }
+
+  .grid .photo-three {
+    width: 229px;
+    height: 109px;
+  }
+
+  .grid .photo-four {
+    width: 109px;
+    height: 109px;
+  }
+
+  .grid .photo-five {
+    width: 109px;
+    height: 109px;
+  }
+
+  .grid .photo-six {
+    width: 109px;
+    height: 230px;
+  }
+}
